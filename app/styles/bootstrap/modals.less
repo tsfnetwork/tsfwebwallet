@@ -77,7 +77,7 @@
 
 .modal-body {
   position: relative;
-  padding: @modal-inner-padding/2;
+  padding: @modal-inner-padding;
   font-size: @font-size-bump-more;
   .table > tbody > tr > td {
     vertical-align: middle;
@@ -102,10 +102,6 @@
   }
 }
 
-#sendTransaction .modal-footer {
-  text-align: center;
-}
-
 .modal-scrollbar-measure {
   position: absolute;
   top: -9999px;
@@ -127,20 +123,5 @@
 @media (min-width: @screen-md-min) {
   .modal-lg {
     width: @modal-lg;
-  }
-}
-
-
-.depreciation-modal {
-  top: 200px !important;
-
-  .depriciation-head {
-    display: flex;
-    align-content: center;
-    justify-content: flex-end;
-  }
-
-  .depriciation-body {
-    text-align: center;
   }
 }

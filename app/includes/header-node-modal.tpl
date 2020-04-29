@@ -1,16 +1,24 @@
 <article class="modal fade" id="customNodeModal" tabindex="-1">
   <section class="modal-dialog">
-    <section class="modal-content">
+    <section class="modal-content" style="background-color: #202123 !important;">
 
       <div class="modal-body">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close Dialog">&times;</button>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
 
-        <h2 class="modal-title text-info" translate="NODE_Title"> Set Up Your Custom Node </h2>
+        <h2 class="modal-title" style="color: #0aa7f5;" translate="NODE_Title"> Set Up Your Custom Node </h2>
 
-        <p class="small"><a href="https://kb.myetherwallet.com/networks/run-your-own-node-with-myetherwallet.html" target="_blank" rel="noopener noreferrer"> Instructions can be found here </a></p>
+        <p class="small" ng-show="browserProtocol!='https:'">
+          <strong translate="NODE_Subtitle">To connect to a local node...</strong>
+          <ul class="small">
+            <li> URL: http://127.0.0.1</li>
+            <li> Port: 4949 </li>
+            <li> Run gtsf: <code>gtsf --rpc --rpcport 4949 --rpcaddr localhost --rpcapi "web3,eth,net,debug" --rpccorsdomain "*"</code></li>
+            <li> Check: <code>Custom</code> (optional - uncheck <code>Supports EIP-155</code>)</li>
+          </ul>
+        </p>
 
-        <div ng-show="browserProtocol!='https:'" class="alert alert-danger small" translate="NODE_Warning">
-          Your node must be HTTPS in order to connect to it via MyEtherWallet.com. You can [download the MyEtherWallet repo & run it locally](https://github.com/kvhnuke/etherwallet/releases/latest) to connect to your local node. Or, get free SSL certificate via [LetsEncrypt](https://letsencrypt.org/)</a>.
+        <div ng-show="browserProtocol=='https:'" class="alert alert-danger small" translate="NODE_Warning">
+          Your node must be HTTPS in order to connect to it via webwallet. You can [download the teslafundswebwallet repo & run it locally](https://github.com/teslafunds/teslafundswebwallet/releases) to connect to any node. Or, get free SSL certificate via [LetsEncrypt](https://letsencrypt.org/)</a>.
         </div>
 
         <section class="row">
@@ -18,7 +26,7 @@
             <label translate="NODE_Name">Node Name</label>
             <input class="form-control"
                    type="text"
-                   placeholder="My ETH Node"
+                   placeholder="My Teslafunds Node"
                    ng-model="customNode.name"
                    ng-class="Validator.isAlphaNumericSpace(customNode.name) ? 'is-valid' : 'is-invalid'">
           </div>
@@ -30,7 +38,7 @@
 
           <div class="clearfix col-xs-3">
             <label class="NODE_Port">Port</label>
-            <input class="form-control" type="text" placeholder="8545" ng-model="customNode.port" ng-class="Validator.isPositiveNumber(customNode.port) || customNode.port=='' ? 'is-valid' : 'is-invalid'">
+            <input class="form-control" type="text" placeholder="4949" ng-model="customNode.port" ng-class="Validator.isPositiveNumber(customNode.port) || customNode.port=='' ? 'is-valid' : 'is-invalid'">
           </div>
 
           <div class="clearfix col-xs-12">
@@ -48,13 +56,9 @@
           </div>
 
           <div class="clearfix col-xs-12 radio">
-            <label><input name="options" type="radio" ng-model="customNode.options" value="eth"> ETH </label>
-            <label><input name="options" type="radio" ng-model="customNode.options" value="etc"> ETC </label>
-            <label><input name="options" type="radio" ng-model="customNode.options" value="rop"> Ropsten </label>
-            <label><input name="options" type="radio" ng-model="customNode.options" value="kov"> Kovan </label>
-            <label><input name="options" type="radio" ng-model="customNode.options" value="rin"> Rinkeby </label>
+            <label><input name="options" type="radio" ng-model="customNode.options" value="tsf"> TSF </label>
             <label><input name="options" type="radio" ng-model="customNode.options" value="cus"> Custom </label>
-            <label ng-show="customNode.options == 'cus'"><input type="checkbox" ng-model="customNode.eip155" value="true"> Supports EIP-155 </label>
+            <label><input type="checkbox" ng-model="customNode.eip155" value="true"> Supports EIP-155(chainId 56) </label>
           </div>
 
           <div class="clearfix col-sm-6 col-sm-offset-6" ng-show="customNode.eip155">
@@ -70,7 +74,7 @@
           Cancel
         </button>
         <button class="btn btn-primary" ng-click="saveCustomNode()" translate="NODE_CTA">
-          Save &amp; Use Custom Node
+          Save & Use Custom Node
         </button>
       </div>
 

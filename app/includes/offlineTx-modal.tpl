@@ -6,9 +6,7 @@
 
         <button type="button" class="close" data-dismiss="modal" aria-label="Close Dialog">&times;</button>
 
-        <h2 class="modal-title text-danger" translate="SENDModal_Title">
-          Warning!
-        </h2>
+        <h2 class="modal-title" style="color: #62bbfd; font-weight: 600;">Tsf Transaction</h2>
 
         <table class="table text-center"><tbody><tr>
 

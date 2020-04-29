@@ -1,4 +1,4 @@
-<article class="block">
+<article class="row">
 
   <!-- To Address -->
   <article class="clearfix">
@@ -7,7 +7,7 @@
       Step 2: Generate Transaction (Offline Computer)
     </h2>
 
-    <section class="col-xs-11">
+    <section class="col-xs-10">
       <label translate="OFFLINE_Step2_Label_1">
         To Address:
       </label>
@@ -18,7 +18,7 @@
              ng-change="validateAddress(tx.to,'')"/>
     </section>
 
-    <section class="col-xs-1 address-identicon-container">
+    <section class="col-xs-2 address-identicon-container">
       <div class="addressIdenticon" title="Address Indenticon" blockie-address="{{tx.to}}" watch-var="tx.to"></div>
     </section>
 
@@ -41,7 +41,7 @@
         <input class="form-control" type="text" placeholder="{{'SEND_amount_short' | translate }}" ng-model="tx.value"/>
         <div class="input-group-btn">
           <a style="min-width: 150px"
-             class="btn btn-default dropdown-toggle"
+             class="btn btn-primary dropdown-toggle"
              ng-click="dropdownAmount = !dropdownAmount"
              ng-class="dropdownEnabled ? '' : 'disabled'">
                 {{unitReadable}}
@@ -72,10 +72,8 @@
          href="https://kb.myetherwallet.com/gas/what-is-gas-ethereum.html"
          target="_blank"
          rel="noopener noreferrer">
-        <img src="images/icon-help.svg" class="help-icon" />
-        <p class="account-help-text" translate="OFFLINE_Step2_Label_4b">
-          21000 is the default gas limit.
-        </p>
+       
+        
       </a>
       <label translate="OFFLINE_Step2_Label_4">
         Gas Limit
@@ -92,10 +90,8 @@
          href="https://kb.myetherwallet.com/gas/what-is-gas-ethereum.html"
          target="_blank"
          rel="noopener noreferrer">
-        <img src="images/icon-help.svg" class="help-icon" />
-        <p class="account-help-text" translate="OFFLINE_Step2_Label_3b">
-          This was displayed in Step 1
-        </p>
+       
+        
       </a>
       <label translate="OFFLINE_Step2_Label_3">
         Gas Price
@@ -109,7 +105,7 @@
                ng-class="Validator.isPositiveNumber(gasPriceDec) ? 'is-valid' : 'is-invalid'" />
         <div class="input-group-btn">
           <span class="dropdown dropdown-gprice" ng-cloak>
-            <a tabindex="0" style="min-width: 170px"  aria-haspopup="true" aria-expanded="false" aria-label="gas price" class="dropdown-toggle btn btn-default" ng-click="gpDropdown = !gpDropdown">
+            <a tabindex="0" style="min-width: 170px"  aria-haspopup="true" aria-expanded="false" aria-label="gas price" class="dropdown-toggle btn btn-primary" ng-click="gpDropdown = !gpDropdown">
               {{ gasPriceDef }}
               <i class="caret"></i>
             </a>
@@ -132,10 +128,8 @@
          href="https://kb.myetherwallet.com/transactions/what-is-nonce.html"
          target="_blank"
          rel="noopener noreferrer">
-        <img src="images/icon-help.svg" class="help-icon" />
-        <p class="account-help-text" translate="OFFLINE_Step2_Label_5b">
-          This was displayed in Step 1.
-        </p>
+        
+       
       </a>
       <label translate="OFFLINE_Step2_Label_5">
         Nonce
@@ -149,10 +143,8 @@
   <article class="clearfix">
     <section class="col-sm-11" ng-show="tokenTx.id=='ether'">
       <span class="account-help-icon">
-        <img src="images/icon-help.svg" class="help-icon" />
-        <p class="account-help-text" translate="OFFLINE_Step2_Label_6b">
-          This is optional.
-        </p>
+        
+       
       </span>
       <label translate="OFFLINE_Step2_Label_6">
         Data

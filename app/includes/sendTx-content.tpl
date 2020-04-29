@@ -83,7 +83,7 @@
           <div class="input-group-btn">
 
             <a style="min-width: 170px"
-               class="btn btn-default dropdown-toggle"
+               class="btn btn-primary dropdown-toggle"
                class="dropdown-toggle"
                ng-click="dropdownAmount = !dropdownAmount"
                ng-class="dropdownEnabled ? '' : 'disabled'">
@@ -154,8 +154,7 @@
            href="https://kb.myetherwallet.com/gas/what-is-gas-ethereum.html"
            target="_blank"
            rel="noopener noreferrer">
-          <img src="images/icon-help.svg" class="help-icon" />
-          <p class="account-help-text" translate="GAS_LIMIT_Desc"></p>
+          
         </a>
         <label translate="TRANS_gas">
           Gas Limit:
@@ -281,7 +280,7 @@
 
     <div class="row form-group">
       <div class="col-xs-12 clearfix">
-        <a class="btn btn-info btn-block"
+        <a class="btn btn-primary btn-block"
            ng-click="generateTx()"
            translate="SEND_generate">
               Generate Transaction

@@ -14,9 +14,9 @@
 
   <div class="dropdown">
 
-    <a class="btn btn-default dropdown-toggle"
+    <a class="btn btn-primary dropdown-toggle"
        class="dropdown-toggle"
-       ng-click="dropdownExistingContracts = !dropdownExistingContracts">
+       ng-click="dropdownExistingContracts = !dropdownExistingContracts" style="height: 40px;">
         {{selectedAbi.name}}
         <small class="mono">{{selectedAbi.address}}</small>
         <i class="caret"></i>

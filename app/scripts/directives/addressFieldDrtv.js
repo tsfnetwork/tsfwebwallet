@@ -6,7 +6,7 @@ var addressFieldDrtv = function($compile, darkList) {
             var Darklist = darkList();
             var varName = attrs.varName;
             var varArr = varName.split('.');
-            var placeholder = attrs.placeholder == undefined ? 'mewtopia.eth or 0xDECAF9CD2367cdbb726E904cD6397eDFcAe6068D' : attrs.placeholder ;
+            var placeholder = attrs.placeholder == undefined ? '0xDECAF9CD2367cdbb726E904cD6397eDFcAe6068D' : attrs.placeholder ;
             var labelTranslated = attrs.labeltranslated == undefined ? 'SEND_addr' : attrs.labeltranslated;
             var setValue = function(value) {
               var temp = scope;
@@ -68,7 +68,7 @@ var addressFieldDrtv = function($compile, darkList) {
                 setValue(scope.addressDrtv.ensAddressField);
                 scope.addressDrtv.showDerivedAddress = false;
                 if (!Validator.isChecksumAddress(scope.addressDrtv.ensAddressField)) {
-                  scope.notifier.info(globalFuncs.errorMsgs[35]);
+                  console.log("address should be checksumed");
                 }
                 checkDarkList(scope.addressDrtv.ensAddressField);
 
@@ -89,7 +89,7 @@ var addressFieldDrtv = function($compile, darkList) {
               } else {
                 setValue('');
                 if(scope.addressDrtv.ensAddressField !== '') {
-                  scope.phishing.msg = 'Invalid address or ENS. Please make sure that the address or ENS you put in is valid';
+                  scope.phishing.msg = 'Invalid address. Please make sure that the address you put in is valid';
                   scope.phishing.error = true;
                 } else {
                   scope.addressDrtv.showDerivedAddress = false;

@@ -1,11 +1,11 @@
-<main class="tab-pane active"
-      ng-if="globalService.currentTab==globalService.tabs.offlineTransaction.id"
-      ng-controller='offlineTxCtrl'
-      ng-cloak>
+<main class="tab-pane active" ng-if="globalService.currentTab==globalService.tabs.offlineTransaction.id" ng-controller='offlineTxCtrl' ng-cloak>
 
-  <h1 translate="OFFLINE_Title">
-    Generate &amp; Send Offline Transaction
-  </h1>
+  <!-- Title -->
+  <h1 translate="OFFLINE_Title"> Generate & Send Offline Transaction </h1>
+  <p> Generating offline transactions can be done in three steps. You will complete steps 1 and 3 on an online computer, and step 2 on an offline computer. This ensures your private keys do not touch an internet-connected device. </p>
+  <!-- / Title -->
+
+  <hr />
 
   @@if (site === 'mew' ) { @@include( './offlineTx-1.tpl',     { "site": "mew" } ) }
   @@if (site === 'cx'  ) { @@include( './offlineTx-1.tpl',     { "site": "cx"  } ) }
