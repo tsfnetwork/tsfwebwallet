@@ -15,4 +15,7 @@ _ens/
 cert.pem
 key.pem
 .idea/
+*.swp
+*.swa
+*.swo
 

@@ -136,7 +136,8 @@ var contractsCtrl = function($scope, $sce, walletService) {
         $scope.visibility = str;
     }
     $scope.selectFunc = function(index) {
-        $scope.contract.selectedFunc = { name: $scope.contract.functions[index].name, index: index };
+        let func = $scope.contract.functions[index];
+        $scope.contract.selectedFunc = { name: $scope.contract.functions[index].name, index: index, stateMutability: func.stateMutability };
         if (!$scope.contract.functions[index].inputs.length) {
             $scope.readFromContract();
             $scope.showRead = false;
