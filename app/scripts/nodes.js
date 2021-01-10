@@ -1,11 +1,11 @@
 "use strict";
-var nodes = function() {};
+var nodes = function () {};
 nodes.customNode = require("./nodeHelpers/customNode");
 nodes.infuraNode = require("./nodeHelpers/infura");
 nodes.metamaskNode = require("./nodeHelpers/metamask");
 nodes.nodeTypes = {
 	TSF: "TSF",
-    Custom: "CUSTOM TSF"
+	Custom: "CUSTOM TSF"
 };
 // 
 nodes.ensNodeTypes = [];
@@ -475,19 +475,19 @@ nodes.nodeList = {
 	// 	service: "thundercore.com",
 	// 	lib: new nodes.customNode("https://mainnet-rpc.thundercore.com", "443")
 	// }
-	 'tsf_wallet': {
-        'name': 'TESLAFUNDS',
-        'blockExplorerTX': 'https://tsfexplorer.xyz/tx/[[txHash]]',
-        'blockExplorerAddr': 'https://tsfexplorer.xyz/addr/[[address]]',
-        'type': nodes.nodeTypes.TSF,
-        'eip155': true,
-        'chainId': 56,
-        'tokenList': require('./tokens/tsfTokens.json'),
-        'abiList': require('./abiDefinitions/tsfAbi.json'),
-        'estimateGas': true,
-        'service': 'tsf-scan',
-        'lib': new nodes.customNode('https://rpc.tsfexplorer.xyz', '')
-     }
+	'tsf_wallet': {
+		'name': 'TSF NODE',
+		'blockExplorerTX': 'https://tsfexplorer.xyz/tx/[[txHash]]',
+		'blockExplorerAddr': 'https://tsfexplorer.xyz/addr/[[address]]',
+		'type': nodes.nodeTypes.TSF,
+		'eip155': true,
+		'chainId': 56,
+		'tokenList': require('./tokens/tsfTokens.json'),
+		'abiList': require('./abiDefinitions/tsfAbi.json'),
+		'estimateGas': true,
+		'service': 'mainnet',
+		'lib': new nodes.customNode('https://rpc.tsfexplorer.xyz', '')
+	}
 };
 
 nodes.ethPrice = require("./nodeHelpers/ethPrice");

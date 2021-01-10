@@ -9,12 +9,13 @@
         </div>
       <div class="col-sm-3 footer-1">
        <ul>
-        <li><p>Website :&nbsp;&nbsp;&nbsp;&nbsp; <a href='https://teslafunds.io' target='_blank'>https://teslafunds.io</a></p></li>
+       <li><img src="images/putea.png" height="50px" width="auto" style="max-width: 12rem;" alt="putea" /></li>
+        <li><p>Website :&nbsp;&nbsp;&nbsp;&nbsp; <a href='https://tsf-network.com' target='_blank'>https://tsf-network.com</a></p></li>
         
-        <li><p>Office Address : &nbsp;&nbsp;Skadarska 4</p></li>
+        <li><p>Office Address : &nbsp;&nbsp;Vudroa Vilsona 8</p></li>
         
         <li><p>11000 Belgrade &nbsp;&nbsp;&nbsp;&nbsp; </li>
-        <li><p>Email :&nbsp;&nbsp;&nbsp;&nbsp; <a aria-label="contact" href="#" target="_blank">info@teslafunds.io</a></p>
+        <li><p>Email :&nbsp;&nbsp;&nbsp;&nbsp; <a aria-label="contact" href="#" target="_blank">SRB@libertas-fund.com</a></p>
         </li>
 
 
@@ -28,12 +29,12 @@
       
      
         <ul>
-        <li>Teslafunds Explorer &nbsp;&nbsp;&nbsp;&nbsp;<a href='https://goldiamchain.io' target='_blank'>https://tsfexplorer.xyz</a></li>
+        <li>TSF Explorer &nbsp;&nbsp;&nbsp;&nbsp;<a href='https://explorer.tsf-network.com' target='_blank'>https://explorer.tsf-network.com</a></li>
         
-        <li>Teslafunds Web Wallet &nbsp;&nbsp;&nbsp;&nbsp; <a href='https://wallet.teslafunds.io' target='_blank'>https://wallet.teslafunds.io</a></li>
-        <li>Teslafunds Pool &nbsp;&nbsp;&nbsp;&nbsp; <a href='http://pool.goldiam.org' target='_blank'>http://tsfpool.xyz</a></li>
-        <li>Teslafunds API &nbsp;&nbsp;&nbsp;&nbsp; <a href='https://wallet.teslafunds.io/api' target='_blank'>https://wallet.teslafunds.io/api</a></li>
-        <li>Github &nbsp;&nbsp;&nbsp;&nbsp; <a href='https://github.com/teslafunds' target='_blank'>https://github.com/teslafunds</a></li>
+        <li>TSF Web Wallet &nbsp;&nbsp;&nbsp;&nbsp; <a href='https://putea.tsf-network.com' target='_blank'>https://putea.tsf-network.com</a></li>
+        <li>TSF Pool &nbsp;&nbsp;&nbsp;&nbsp; <a href='http://pool.tsf-network.com' target='_blank'>http://pool.tsf-network.com</a></li>
+       
+        <li>Github &nbsp;&nbsp;&nbsp;&nbsp; <a href='https://github.com/tsfnetwork' target='_blank'>https://github.com/tsfnetwork</a></li>
         <li>Bitcointalk &nbsp;&nbsp;&nbsp;&nbsp; <a href='https://bitcointalk.org/index.php?topic=5080832' target='_blank'>https://bitcointalk.org/index.php?topic=5080832</a></li>
         <li>Telegram &nbsp;&nbsp;&nbsp;&nbsp; <a href='http://telegram.me/teslafunds' target='_blank'>http://telegram.me/teslafunds</a></li>
         </ul>
@@ -43,7 +44,7 @@
         
         <ul>
         
-          <li><a aria-label="facebook" href="https://facebook.com/goldiamico" target="_blank">Facebook</a></li>
+          <li><a aria-label="facebook" href="">Facebook</a></li>
          
           <li><a aria-label="bitcointalk" href="" target="_blank">Slack</a></li>
        

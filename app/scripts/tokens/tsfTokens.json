@@ -1,7 +1,24 @@
-[
+[{
+    "address": "0x86ABD83F5C397fA40c58d56d32dd04b0c3Fff58D",
+    "symbol": "BINAR",
+    "decimal": 0,
+    "type": "default"
+  },
   {
-    "address": "0x7b1DAcDf65c4203B4d2D93486191E618022F4F79",
+    "address": "0x16545038bffb6604a1113198d93b31fc72fb2d76",
     "symbol": "BINARTEST",
+    "decimal": 0,
+    "type": "default"
+  },
+  {
+    "address": "0x3de49014ddb025b95d86ee31d472f3d3ae336329",
+    "symbol": "BOLT",
+    "decimal": 18,
+    "type": "default"
+  },
+  {
+    "address": "0x630fe31b104d66a9d972491825c5527bbb52a46a",
+    "symbol": "FUSION",
     "decimal": 18,
     "type": "default"
   }
