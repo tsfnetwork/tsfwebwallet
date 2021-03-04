@@ -1,12 +1,12 @@
 [{
-    "address": "0x86ABD83F5C397fA40c58d56d32dd04b0c3Fff58D",
+    "address": "0x5157adC7156984520F2Aeb94247E6268f3091b6B",
     "symbol": "BINAR",
     "decimal": 0,
     "type": "default"
   },
   {
-    "address": "0x16545038bffb6604a1113198d93b31fc72fb2d76",
-    "symbol": "BINARTEST",
+    "address": "0x5A03BfB4fCB0E9f9dFfBF82d0B8137e00ca577d9",
+    "symbol": "E-SAR",
     "decimal": 0,
     "type": "default"
   },

@@ -477,8 +477,8 @@ nodes.nodeList = {
 	// }
 	'tsf_wallet': {
 		'name': 'TSF NODE',
-		'blockExplorerTX': 'https://tsfexplorer.xyz/tx/[[txHash]]',
-		'blockExplorerAddr': 'https://tsfexplorer.xyz/addr/[[address]]',
+		'blockExplorerTX': 'https://explorer.tsf-platform.com/#/tx/[[txHash]]',
+		'blockExplorerAddr': 'https://explorer.tsf-platform.com/#/address/[[address]]',
 		'type': nodes.nodeTypes.TSF,
 		'eip155': true,
 		'chainId': 56,
@@ -486,7 +486,7 @@ nodes.nodeList = {
 		'abiList': require('./abiDefinitions/tsfAbi.json'),
 		'estimateGas': true,
 		'service': 'mainnet',
-		'lib': new nodes.customNode('https://rpc.tsfexplorer.xyz', '')
+		'lib': new nodes.customNode('https://rpc.tsf-platform.com', '')
 	}
 };
 

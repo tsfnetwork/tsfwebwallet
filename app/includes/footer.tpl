@@ -29,7 +29,7 @@
       
      
         <ul>
-        <li>TSF Explorer &nbsp;&nbsp;&nbsp;&nbsp;<a href='https://explorer.tsf-network.com' target='_blank'>https://explorer.tsf-network.com</a></li>
+        <li>TSF Explorer &nbsp;&nbsp;&nbsp;&nbsp;<a href='https://explorer.tsf-platform.com/#/' target='_blank'>https://explorer.tsf-platform.com/#/</a></li>
         
         <li>TSF Web Wallet &nbsp;&nbsp;&nbsp;&nbsp; <a href='https://putea.tsf-network.com' target='_blank'>https://putea.tsf-network.com</a></li>
         <li>TSF Pool &nbsp;&nbsp;&nbsp;&nbsp; <a href='http://pool.tsf-network.com' target='_blank'>http://pool.tsf-network.com</a></li>
