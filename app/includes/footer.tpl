@@ -32,7 +32,7 @@
         <li>TSF Explorer &nbsp;&nbsp;&nbsp;&nbsp;<a href='https://explorer.tsf-platform.com/#/' target='_blank'>https://explorer.tsf-platform.com/#/</a></li>
         
         <li>TSF Web Wallet &nbsp;&nbsp;&nbsp;&nbsp; <a href='https://putea.tsf-network.com' target='_blank'>https://putea.tsf-network.com</a></li>
-        <li>TSF Pool &nbsp;&nbsp;&nbsp;&nbsp; <a href='http://pool.tsf-network.com' target='_blank'>http://pool.tsf-network.com</a></li>
+        <li>TSF Pool &nbsp;&nbsp;&nbsp;&nbsp; <a href='http://tsfpool.xyz' target='_blank'>http://tsfpool.xyz</a></li>
        
         <li>Github &nbsp;&nbsp;&nbsp;&nbsp; <a href='https://github.com/tsfnetwork' target='_blank'>https://github.com/tsfnetwork</a></li>
         <li>Bitcointalk &nbsp;&nbsp;&nbsp;&nbsp; <a href='https://bitcointalk.org/index.php?topic=5080832' target='_blank'>https://bitcointalk.org/index.php?topic=5080832</a></li>
