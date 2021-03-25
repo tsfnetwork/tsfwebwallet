@@ -15,7 +15,7 @@
         <li><p>Office Address : &nbsp;&nbsp;Vudroa Vilsona 8</p></li>
         
         <li><p>11000 Belgrade &nbsp;&nbsp;&nbsp;&nbsp; </li>
-        <li><p>Email :&nbsp;&nbsp;&nbsp;&nbsp; <a aria-label="contact" href="#" target="_blank">SRB@libertas-fund.com</a></p>
+        <li><p>Email :&nbsp;&nbsp;&nbsp;&nbsp; <a aria-label="contact" href="#" target="_blank">SRB@libertasgh.com</a></p>
         </li>
 
 
